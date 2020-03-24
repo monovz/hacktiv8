@@ -27,7 +27,7 @@
 
 /*NOMOR 3*/
 // counter1 = 0
-// while (counter1<10){
+// while (counter1<100){
 //     counter1++;
 //     if(counter1%2==0){
 //         console.log('GENAP')
