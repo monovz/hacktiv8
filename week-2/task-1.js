@@ -18,7 +18,6 @@
   *     DISPLAY "Ini adalah Tahun Kabisat"
   * ElSE
   *     DISPLAY "Ini bukan Tahun Kabisat"
-  * END IF
   */
 
   /**NOMOR 3
@@ -28,7 +27,6 @@
    * WHILE pakaianDiMesinCuci < jumlahPakaian
    *    ADD pakaianDiMesinCuci by 1
    *    DO "Pakaian anda belum masuk semua loo. Terusin terusin"
-   * END WHILE
    * 
    * DISPLAY "Pakaian anda sudah masuk semua. Kuy dinyalain mesin cucinya. Let it do the rest." 
    */
@@ -41,5 +39,4 @@
     *   DO "Siswa harus dihukum. Jangan berat-berat ya, dia ga akan kuat."
     * ELSE
     *   DO "Siswa anak yang rajin. Puji dia, dia berhak dipuji."
-    * END IF
     */
