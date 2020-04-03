@@ -23,7 +23,7 @@ function groupAnimals(animals) {
         //LOOPING FOR CONDITIONING THE FIRST ARRAY
         for(var j=0;j<arr.length-1;j++){
             if(arr[j]==arr[j+1] || arr[j][0]!==arr[j+1][0]){
-                arr.pop();
+                arr.length-=1;
             } else if(arr[j]!==animals[j+1]){
                 continue;
             }            
