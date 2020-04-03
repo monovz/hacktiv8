@@ -1,12 +1,28 @@
 function hitungJumlahKata(kalimat) {
     // you can only write your code here!
     var jumlahKata = 0;
+    var kalimatBaru=''
+    var kalimatArr=[];
     if(kalimat){
-        kalimat=kalimat.split(" ")
-        for (var i=0; i<kalimat.length;i++){
-            jumlahKata++;
-            }
-        return jumlahKata;
+      for (var i=0; i<kalimat.length; i++){
+        if(kalimat[i]!==' '){
+          kalimatBaru+=kalimat[i];
+        } else {
+          if(kalimatBaru!==''){
+            kalimatArr.push(kalimatBaru);
+          }
+          kalimatBaru='';
+        }
+      }
+
+      if(kalimatBaru!=''){
+        kalimatArr.push(kalimatBaru);
+      }
+
+      for (var i=0; i<kalimatArr.length;i++){
+          jumlahKata++;
+          }
+      return jumlahKata;
     }else {return jumlahKata;}
   }
   
