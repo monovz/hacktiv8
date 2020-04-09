@@ -1,5 +1,8 @@
 function cariModus(arr) {
-    if(arr.length===1){
+    if(arr.length<=1){
+        if(arr.length!==1){
+            return '';
+        }
         return arr[0];
     } else{
         //SORTING
@@ -30,7 +33,7 @@ function cariModus(arr) {
         var angkaTerbesar=arr[0];
         var counterTerbesar=1;
         
-        for(var i=1; i<arr.length; i++){
+        for(var i=1; i<=arr.length; i++){
             if(arr[i-1]!==arr[i]){
                 if(counterSekarang > counterTerbesar){
                     counterTerbesar=counterSekarang;
